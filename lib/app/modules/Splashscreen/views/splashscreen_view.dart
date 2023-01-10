@@ -20,6 +20,7 @@ class SplashscreenView extends GetView<SplashscreenController> {
                 end: Alignment.bottomCenter,
                 colors: [bgLogin, bgLogin2])),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               width: lebar,
@@ -32,17 +33,17 @@ class SplashscreenView extends GetView<SplashscreenController> {
             ),
             Container(
               margin: EdgeInsets.only(bottom: 20),
-              width: lebar,
+              width: lebar *0.4,
               child: Text(
                 "Let's Get Started",
                 style: TextStyle(
-                    fontSize: 50,
+                    fontSize: 35,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
             ),
             Container(
-              margin: EdgeInsets.only(bottom: 80),
+              margin: EdgeInsets.only(bottom: 50),
               // width: lebar * 0.8,
               child: Text(
                 "Connect with each other with chatting or calling. Enjoy safe and private texting",
@@ -54,7 +55,7 @@ class SplashscreenView extends GetView<SplashscreenController> {
               ),
             ),
             Container(
-                margin: EdgeInsets.only(bottom: 80),
+                margin: EdgeInsets.only(bottom: 50),
                 width: lebar,
                 height: tinggi * 0.1,
                 decoration: BoxDecoration(
